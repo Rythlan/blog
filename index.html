@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rythlan | Dev Logs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="global-header">
+    <div class="header-container">
+      <nav class="nav-wrapper">
+        <div class="brand-zone">
+          <a href="#" class="brand-title">Rythlan@dev</a>
+          <span class="brand-meta">Public blog</span>
+        </div>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#category:projects">Projects</a>
+            <a href="#category:articles">Articles</a>
+            <a href="https://github.com/Rythlan" target="_blank" rel="nofollow">GitHub</a>
+          </div>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">◐</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main-viewport">
+    <nav id="breadcrumbs" class="dense-breadcrumbs" style="display: none;"></nav>
+    <div id="view-target">Loading index records...</div>
+  </main>
+  <!-- NOTEBOOK CONFIG
+    { "repo": "owner/repo" }              → root dir, auto-discovers .md
+    { "repo": "owner/repo", "path": "dir/" } → subdirectory
+    { "path": "dir/" }                    → local dir
+    { "slug": "name", "path": "file.md" } → single file
+  -->
+  <script id="notebook-config" type="application/json">
+    { "sources": [{ "repo": "Rythlan/notes" }] }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
